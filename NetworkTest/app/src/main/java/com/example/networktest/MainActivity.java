@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
     }
   }
 
-  private void parseJSONWithGSON(String jsonData,){
+  private void parseJSONWithGSON(String jsonData){
     Gson gson = new Gson();
     List<App>appList = gson.fromJson(jsonData,new TypeToken<List<App>>(){}.getType());
 
